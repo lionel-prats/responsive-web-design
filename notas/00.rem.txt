@@ -1,0 +1,13 @@
+rem -> corresponde a la medida de la "m" de la raiz del documento
+em -> corresponde a la medida de la "m" del contexto donde nos encontremos
+
+el estandar del tamaño de fuente por defecto de la raiz es de 16px, y NO ES RECOMENDABLE MODIFICARLO.
+
+tanto "em" como "rem" se calcula en base a la propiedad font-size
+
+en web 16px equivalen aproximadamente a los 12 puntos de tamaño que se utilizan en imprenta
+por temas de experiencia de usuario esta demostrado que es el tamaño al que el ojo esta mas acostumbrado 
+
+-----
+
+el h1 por defecto tiene un font-size de 2em (2 * 16px = 32px) 

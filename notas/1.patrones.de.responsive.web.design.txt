@@ -1,0 +1,7 @@
+patrones de responsive web design:
+
+- 2 Columnas Iguales
+- 3 Columnas Iguales
+- Column Drop Con Sidebar
+- Layout Shifter
+- Mostly Fluid

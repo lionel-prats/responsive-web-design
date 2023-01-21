@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*
+    Por defecto, <html> va a tener un font-size de 1rem (por defecto 1rem equivale a 16px) 
+    Por defecto, <body> hereda el font-size de 
+     */
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%; 
+        /* font-size: 10px; */ 
+        /* 
+        de esta forma definimos que 1rem = 10px
+        EXPLICACION
+        <html> por defecto tiene un font-size de 1rem, y por defecto 1rem=16px
+        el 62.5% de 16 es 10 
+
+        se puede entender rem como la unidad de medida del font-size de <html> -> si <html>font-size = 12px, entonce font-size= 2.15rem == 25.8px
+        */
+    }
+    body {
+        /* font-size: 2.15rem; */
+        font-size: 3em;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+</style>
+<body>
+    texto suelto dentro del body
+    <h2>h2 dentro del body</h1>
+    <main>
+        <h2>h2 dentro del main</h2>
+    </main>
+</body>
+</html>
+
+<!-- 
+    en este ejemplo:
+    html -> font-size: 10px;
+    body -> font-size: 30px;
+
+
+
+ -->

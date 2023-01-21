@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.entrada-blog a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/** CODIGO AQUI **/
+/*
+solucion lio
+@media (min-width: 768px) {
+    .con-sidebar {
+        display: flex;
+        justify-content: space-between;
+    }
+    article {
+        flex-basis: calc(75% - 1rem);
+    }
+    aside {
+        flex-basis: calc(25% - 1rem);
+    }
+}
+*/
+
+@media (min-width: 768px) {
+    .con-sidebar {
+        display: flex;
+        /* justify-content: space-between; */
+        column-gap: 2rem;
+    }
+    /* por cada pixel que recibe el aside, el article recibe 3 */
+    article {
+        /* factor de crecimiento 3 */
+        flex: 3; /* == flex-grow: 3; */
+    }
+    aside {
+        /* factor de crecimiento 1 */
+        flex: 1; /* == flex-grow: 1; */
+    }
+}
